@@ -5,10 +5,10 @@ public class CashbackHackServiceTest extends TestCase {
 
     public void testRemainerOfThousand() {
         int amount = 1000;
-        int expected = 1000;
+        int expected = 0;
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     public void testRemainderOfFiveHundred() {
@@ -16,7 +16,7 @@ public class CashbackHackServiceTest extends TestCase {
         int expected = 500;
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     public void testRemainderFromZero() {
@@ -24,7 +24,7 @@ public class CashbackHackServiceTest extends TestCase {
         int expected = 1000;
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     public void testRemain() {
@@ -32,7 +32,7 @@ public class CashbackHackServiceTest extends TestCase {
         int expected = 600;
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }
